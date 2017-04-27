@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="web_waypoint" name="webserver" type="webserver.py" args="8000" />
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"> 
+     <arg name="port" value="8080"/>
+  </include>
+  <node name="robot_pose_publisher" pkg="robot_pose_publisher" type="robot_pose_publisher" />
+</launch>
