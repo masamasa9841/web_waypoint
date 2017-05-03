@@ -7,7 +7,7 @@
 <script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
 <script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
 <script type="text/javascript" src="http://cdn.robotwebtools.org/ros2djs/current/ros2d.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="masaya.js"></script>
 
 <script type="text/javascript">
   /**
@@ -16,7 +16,7 @@
   function init() {
     // Connect to ROS.
     var ros = new ROSLIB.Ros({
-      url : 'ws://' + location.hostname + ':8080'
+      url : 'ws://' + '192.168.22.173' + ':8080'
     });
 
     // Create the main viewer.
