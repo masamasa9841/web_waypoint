@@ -4,4 +4,8 @@
      <arg name="port" value="8080"/>
   </include>
   <node name="robot_pose_publisher" pkg="robot_pose_publisher" type="robot_pose_publisher" />
+  <include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch"> 
+  </include>
+  <include file="$(find turtlebot_gazebo)/launch/amcl_demo.launch"> 
+  </include>
 </launch>
